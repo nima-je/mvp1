@@ -1,0 +1,16 @@
+/*
+Theme Name: LinkShop
+Theme URI: https://example.com/linkshop
+Author: LinkShop Team
+Author URI: https://example.com
+Description: فروشگاه تک‌فروشنده الهام گرفته از دیجی‌کالا با تاکید بر مینیمالیسم و گلس مورفیسم.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: linkshop
+Tags: ecommerce, rtl-language-support, woocommerce
+*/
+
+/* Base import for design system */
+@import url('assets/css/design-system.css');
+@import url('assets/css/main.css');
