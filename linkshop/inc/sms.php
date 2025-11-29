@@ -6,6 +6,10 @@ function linkshop_send_sms( $event, $data ) {
     if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
         error_log( $message );
     }
+    /**
+     * Log sms event for dashboard surface
+     */
+    do_action( 'linkshop_sms_logged', $event, $data );
     // Placeholder for provider call:
     // wp_remote_post( 'https://sms-provider.test/send', [ 'body' => [ 'to' => $data['phone'], 'message' => $data['message'] ] ] );
 }

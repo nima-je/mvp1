@@ -14,3 +14,4 @@ require_once get_template_directory() . '/inc/sms.php';
 require_once get_template_directory() . '/inc/license.php';
 require_once get_template_directory() . '/inc/analytics.php';
 require_once get_template_directory() . '/inc/invoices.php';
+require_once get_template_directory() . '/inc/owner-dashboard.php';

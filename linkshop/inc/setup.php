@@ -29,6 +29,10 @@ function linkshop_assets() {
         'ajaxUrl' => admin_url( 'admin-ajax.php' ),
         'i18n'    => [ 'addToCart' => __( 'افزودن به سبد', 'linkshop' ) ],
     ] );
+
+    if ( function_exists( 'is_account_page' ) && is_account_page() ) {
+        wp_enqueue_style( 'linkshop-owner-dashboard', get_template_directory_uri() . '/assets/css/admin-dashboard.css', [ 'linkshop-style' ], $theme_version );
+    }
 }
 
 add_action( 'admin_enqueue_scripts', 'linkshop_admin_assets' );
